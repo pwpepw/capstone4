@@ -1,5 +1,29 @@
-####  SVM, CNN, CRNN+CTC 학습한 모델 파일들<br>
-모델 | 프레임워크 | 확장자<br>
-SVM | scikit-learn | .pkl<br>
-CNN | TensorFlow/Keras | .h5<br>
-CRNN | PyTorch | .pth<br/>
+# models
+
+이 폴더는 캡차 인식을 위한 모델 구현 코드를 저장합니다.
+
+## 포함 모델
+
+- `svm.py`
+- `cnn.py`
+- `crnn_ctc.py`
+- `crnn_attention.py` (고려 예정)
+
+## 모델 설명
+
+### SVM
+- 전형적인 분할 기반 방식의 모델입니다.
+- HOG 특징(수동 추출)을 사용하는 분류 모델입니다.
+
+### CNN
+- 분할 없이 / 분할 가능한 모델이지만, 해당 프로젝트에서는 분할 모델로 정의하고 있습니다.
+- ConV layer + Relu에서 합성곱 연산으로 특징을 자동으로 추출하고, Pooling 축소를 한 뒤, FC layer에서 최종 분류를 하는 모델입니다.
+
+### CRNN+CTC
+- CNN과 RNN 계열을 결합한 시퀀스 인식 모델입니다.
+- 여기서의 CNN은 분할 없는 모델입니다.(바로 위의 CNN과는 다르게 설계)
+
+## 참고사항
+
+- 모델 코드는 실험 설정에 따라 변경될 수 있습니다.
+- 공동 전처리는 grayscale만 하나, 실험 결과과 좋지 않을 시 추가될 수 있습니다.

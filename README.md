@@ -23,7 +23,7 @@
 
 ```
 data/
-  sample_captcha/ - 샘플 데이터 캡차가 있는 폴더입니다.
+  sample_captcha/ - 샘플 데이터 캡차가 있는 폴더
     level1/
     level2/
     level3/

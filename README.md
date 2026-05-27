@@ -31,15 +31,6 @@ data/
 
 docs/                    ← 개발 계획서, 기능 명세서 등 문서
 
-pythoncode/              ← 모델 구현 코드 (.py)
-  svm/
-    svm.py
-  cnn/
-    cnn.py
-  crnn_ctc/
-    crnn_ctc.py
-  crnn_attention/
-    crnn_attention.py
 
 models/                  ← 학습 완료된 모델 파일 (.pkl / .pth)
   svm/
@@ -50,6 +41,16 @@ models/                  ← 학습 완료된 모델 파일 (.pkl / .pth)
     crnn_ctc.pth
   crnn_attention/
     crnn_attention.pth
+
+pythoncode/              ← 모델 구현 코드 (.py)
+  svm/
+    svm.py
+  cnn/
+    cnn.py
+  crnn_ctc/
+    crnn_ctc.py
+  crnn_attention/
+    crnn_attention.py
 
 README.md                ← 프로젝트 설명
 ```

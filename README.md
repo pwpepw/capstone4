@@ -29,7 +29,8 @@ data/
     level3/
     level4/
 docs/ - 개발 계획서, 기능 명세서 등 문서가 들어가 있는 폴더
-models/ - 모델 파일이 있는 폴더
+pythoncode/ - 학습하기 전 기존 모델 업로드(.py)
+models/ - 학습이 완료된 모델 파일이 있는 폴더(.pkl or .pth)
 README.md
 ```
 

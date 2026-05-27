@@ -53,6 +53,8 @@ pythoncode/              ← 모델 구현 코드 (.py)
     crnn_attention.py
 
 README.md                ← 프로젝트 설명
+captcha_ablation_only.py                ← 변수(블러/웨이브 등)를 하나씩 바꾼 캡차 이미지 생성 코드(생성된 데이터로 저장된 모델 평가)
+captcha_generator.py                ← 레벨 별 캡차 이미지 생성 코드
 ```
 
 ---
